@@ -1,8 +1,4 @@
 // // CALCULATRICE
-/* Créer une calculatrice en JS:
-- Demander deux nombres à l'utilisateur ( à convertir pour faire des opérations arithmétiques)
-- Demander un opérateur (ou un menu) pour sélectionner l'opération 
-*/
 const operator = document.querySelectorAll(".operator");
 const display = document.getElementById("display");
 
@@ -22,6 +18,8 @@ const plus = document.getElementById("plus");
 const div = document.getElementById("div");
 const clear = document.getElementById("clear");
 const doit = document.getElementById("doit")
+
+/////////////////////////////////////////
 
 let nbre1 = ''
 let nbre2 = ''
@@ -108,6 +106,8 @@ doit.addEventListener('click', function(){
         display.value  = divResult
     }
 })
+
+/////////////////////////////////////////
 
 clear.addEventListener('click', function(){
     display.value = ''
